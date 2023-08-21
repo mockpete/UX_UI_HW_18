@@ -68,3 +68,20 @@ p {
     background-color: #E2FFF5;
     border-radius: 10px;
 }
+
+.flex-container {
+    display: flex;
+    justify-content: center;
+}
+
+.work-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+@media only screen and (max-width: 600px) {
+    .flex-container {
+        display: table-column;
+        grid-template-columns: 1fr;
+    }
+  }
